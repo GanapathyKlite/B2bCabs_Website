@@ -3,7 +3,6 @@ import { MdLocationSearching } from "react-icons/md";
 import { FaCalendarAlt } from "react-icons/fa";
 import "./Dashboard_Hero_Comp.css";
 import backgroundVideo from "../../Asset/Background.webm";
-import Ads from "../Ads/Ads";
 import Dashboard_Ads from "../Ads/Dashboard_Ads";
 import DatePicker from "../DatePicker/DatePicker";
 
@@ -168,7 +167,7 @@ const Dashboard_Hero_Comp = () => {
                     </div>
                     <div className=" col-lg-3 col-md-3 z-1">
                       <div className="px-3 py-lg-3 py-md-2  m-0 d-flex align-items-center justify-content-between">
-                        <FaCalendarAlt className="opacity-0 "/>
+                        <FaCalendarAlt className="opacity-0 " />
                         <DatePicker className="inputdiv w-100" />
                         {/* <button className="currentlocationbtn opacity-0">
                           <MdLocationSearching />
@@ -191,7 +190,7 @@ const Dashboard_Hero_Comp = () => {
                 </div>
               ))}
             </div>
-            <Dashboard_Ads/>
+            <Dashboard_Ads />
           </div>
         </div>
       </div>
