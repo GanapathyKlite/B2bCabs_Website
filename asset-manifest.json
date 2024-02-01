@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/B2bCabs_Website/static/css/main.82009c7b.css",
+    "main.js": "/B2bCabs_Website/static/js/main.7292471c.js",
+    "static/media/Footer_Taxi_Video.mp4": "/B2bCabs_Website/static/media/Footer_Taxi_Video.257d752cf9e4cf659a6d.mp4",
+    "static/media/Background.webm": "/B2bCabs_Website/static/media/Background.ff8f4de0dfe8f8209b9c.webm",
+    "static/media/sign_Up_bg.jpg": "/B2bCabs_Website/static/media/sign_Up_bg.7fb4edb0bb1b5c79fca7.jpg",
+    "static/media/car.png": "/B2bCabs_Website/static/media/car.7e3c1647d647c2ee49fc.png",
+    "static/media/Profile.png": "/B2bCabs_Website/static/media/Profile.a2b874e9fce2aed95c14.png",
+    "static/media/red_car.png": "/B2bCabs_Website/static/media/red_car.39d3b0a9c033e29c673f.png",
+    "static/media/facts-left.png": "/B2bCabs_Website/static/media/facts-left.59a3b1f851b0a089e41f.png",
+    "static/media/BG_Sprinkle.svg": "/B2bCabs_Website/static/media/BG_Sprinkle.835a4948701698d70b89.svg",
+    "static/media/B2b Logo.svg": "/B2bCabs_Website/static/media/B2b Logo.f07fb2c9f720b62d65307d792a064070.svg",
+    "static/media/piggy-bank.svg": "/B2bCabs_Website/static/media/piggy-bank.f710157b5082807d3d7dfe3d27f93a93.svg",
+    "static/media/24-7.svg": "/B2bCabs_Website/static/media/24-7.ff7f331543917b682695cb3c4c035176.svg",
+    "static/media/all cab in one point.svg": "/B2bCabs_Website/static/media/all cab in one point.698343118136dfda79eb1b688ca26dff.svg",
+    "index.html": "/B2bCabs_Website/index.html",
+    "main.82009c7b.css.map": "/B2bCabs_Website/static/css/main.82009c7b.css.map",
+    "main.7292471c.js.map": "/B2bCabs_Website/static/js/main.7292471c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.82009c7b.css",
+    "static/js/main.7292471c.js"
+  ]
+}
