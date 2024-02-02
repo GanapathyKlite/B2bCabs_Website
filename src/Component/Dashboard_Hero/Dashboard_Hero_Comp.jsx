@@ -194,7 +194,11 @@ const Dashboard_Hero_Comp = () => {
                           }`}
                           onClick={handleCurrentLocation}
                         >
-                          {isToggled ? <MdGpsFixed className="clicked" /> : < MdLocationSearching className="notclicked" />}
+                          {isToggled ? (
+                            <MdGpsFixed className="clicked" />
+                          ) : (
+                            <MdLocationSearching className="notclicked" />
+                          )}
                         </button>
                       </div>
                     </div>
@@ -287,15 +291,7 @@ const Dashboard_Hero_Comp = () => {
                       <hr className="hrLine" />
                     </div>
 
-{tab.id === 3 ? 
-<>
-
-</>
-:
-<>
-
-</>}
-
+                    {tab.id === 3 ? <></> : <></>}
 
                     <div className=" col-lg-3 col-md-3 z-1">
                       <div className=" px-0 py-lg-3 py-md-2  m-0 d-flex align-items-center justify-content-between">
@@ -306,11 +302,9 @@ const Dashboard_Hero_Comp = () => {
 
                     <hr className="hrLine  d-block d-sm-none" />
 
-<div className="divline d-none d-sm-block d-md-none d-lg-none d-xl-none">
-  <hr className="hrLine" />
-</div>
-
-
+                    <div className="divline d-none d-sm-block d-md-none d-lg-none d-xl-none">
+                      <hr className="hrLine" />
+                    </div>
 
                     {/* <div className="col-lg-4 col-md-4 z-3"><input type="text" className="inputbox px-lg-4 py-lg-3 py-md-2  px-md-3 m-0" placeholder = {tab.second_input_box_placeholder} /></div> */}
                     <div className="col-lg-3 col-md-3 z-1">
