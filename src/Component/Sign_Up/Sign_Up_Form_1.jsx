@@ -77,7 +77,7 @@ const Sign_Up_Form_1 = () => {
               >
                 <select
                   style={{ color: "var(--grayText)" }}
-                  className="form-select form-select-lg mb-3 form-control focus-ring focus-ring-light "
+                  className="form-select select form-select-lg mb-3 form-control focus-ring focus-ring-light "
                   aria-label="Large select example"
                   value={userData['companyType']}
                   onChange={(e)=>setUserData({...userData, "companyType": e.target.value})}

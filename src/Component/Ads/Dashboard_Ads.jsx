@@ -5,7 +5,7 @@ import whiteDote from "../../Asset/Ads-white-dots.png";
 
 const Dashboard_Ads = () => {
   return (
-   
+    
       <div className="Dashboard_Ads bg-image">
         <div className="Dashboard_Ads-left"></div>
         <div className="Dashboard_Ads-right">

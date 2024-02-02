@@ -27,21 +27,7 @@
   margin: auto;
 }
 
-/* .overlay {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: radial-gradient(
-    127.68% 2996.56% at 12.65% 127.68%,
-    #00000044 0%,
-    #222222 100%
-  );
-  top: 0;
-  bottom: 0;
-  z-index: 1;
-  mix-blend-mode: hard-light;
-}*/
-video {
+.video {
   position: absolute;
   height: 60vh;
   width: 100%;
@@ -61,14 +47,13 @@ video {
   font-size: 48px;
 }
 
-
 .height {
   height: 200vh;
 }
 
 .search_btn {
   border: none;
-  box-shadow: -4px 4px 0 var(--PrimaryColor);
+  /* box-shadow: -4px 4px 0 var(--PrimaryColor); */
   background-color: var(--blackColor);
   color: var(--whiteColor);
   transition: 0.2s ease-in-out;
@@ -102,11 +87,10 @@ video {
 }
 
 .tab_box .tab_btn {
-  font-size: 13px;
+  font-size: 14px;
   color: #919191;
   background: none;
   border: none;
-  /* padding: 0 10px; */
   cursor: pointer;
 }
 
@@ -167,31 +151,25 @@ video {
   margin: 0 16px;
   border: none;
   background-color: transparent;
+  font-size: 14px !important;
 }
 
 .inputdiv {
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2) !important;
+  background-color: #fff !important;
 }
 
-.inputbox:focus {
-  border: 0;
-  outline: 0;
+.inputbox:focus,
+.inputbox:active,
+.inputbox:hover  {
+  border: 0 !important;
+  outline: 0 !important;
 }
 
-.greencircle {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #92c83e;
-}
-
-.redcirlce {
-  background-color: #e97550;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-}
+/* .inputdiv:hover,.inputdiv:focus,.inputdiv:active {
+  border: 1px solid var(--blackColor) !important;
+  transition: all 0.4s ease-in-out !important;
+} */
 
 .currentlocationbtn {
   border: none;
@@ -203,7 +181,7 @@ video {
 }
 
 .clicked {
-  color: #92c83e;
+  color: var(--PrimaryColor);
 }
 
 .mobile_sc {
@@ -211,18 +189,42 @@ video {
   top: -180px;
 }
 
-.css-a643pv-MuiStack-root{
+.css-a643pv-MuiStack-root {
   padding: 0px !important;
   width: 100%;
+  overflow: hidden !important;
 }
 
-.css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root{
+.css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root {
   border-radius: 0px !important;
   background-color: #fff !important;
+  padding-right: 2px;
+  /* display: flex !important; */
+  justify-content: space-between;
 }
 
+.css-nxo287-MuiInputBase-input-MuiOutlinedInput-input {
+  font-size: 14px !important;
+  padding: 19px 14px !important;
+}
 
+/* Style the radio buttons */
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #4caf50;
+  outline: none;
+  cursor: pointer;
+}
 
+/* Style the radio button when checked */
+input[type="radio"]:checked {
+  background-color: #4caf50;
+}
 
 
 /* Radio Button Start */
@@ -232,12 +234,6 @@ video {
   align-items: center;
   cursor: pointer;
   transition: 0.3s;
-}
-
-.label:hover,
-.label:focus-within,
-.label:checked {
-  background: hsla(0, 0%, 39%, 0.14);
 }
 
 .radio-input {
@@ -278,24 +274,18 @@ video {
 }
 
 .label-text {
-  color: var(--grayText);
+  color: var(--SecondaryColor);
   margin-left: 10px;
   letter-spacing: 1px;
-  text-transform: uppercase;
-  font-size: 14px;
-  /* font-weight: 900; */
+  font-size: 12px;
   transition: 0.3s;
-}
-
-.radio-input:checked ~ .label-text {
-  color: hsl(0, 0%, 40%);
 }
 
 /* Radio Button End */
 
 @media screen and (max-width: 340px) {
   .tab_box .tab_btn {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -335,7 +325,7 @@ video {
     padding: 15px;
   }
 
-  .css-1d3z3hw-MuiOutlinedInput-notchedOutline{
+  .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
     border: none !important;
   }
 }
@@ -352,6 +342,11 @@ video {
   .redcirlce {
     width: 8px;
     height: 8px;
+  }
+  .css-nxo287-MuiInputBase-input-MuiOutlinedInput-input {
+    padding: 12px 0 12px 20px !important;
+    width: 75% !important;
+    /* height: 42px !important; */
   }
 }
 
@@ -448,6 +443,21 @@ body {
 .tabs__item:not(:last-child) {
 	margin-right: 20px;
 }
+
+.greencircle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #92c83e;
+}
+
+.redcirlce {
+  background-color: #e97550;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
  */
 
 /* Sample End */

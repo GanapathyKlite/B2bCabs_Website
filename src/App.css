@@ -125,8 +125,8 @@ li {
 }
 
 .icon {
-  font-size: 2.5rem;
-  /* cursor: pointer; */
+  font-size: 1.1rem;
+  color: var(--grayText);
 }
 
 .flex {
