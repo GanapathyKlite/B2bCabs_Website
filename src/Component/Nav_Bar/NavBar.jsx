@@ -95,16 +95,16 @@ const Navbar = () => {
           {/* <!-- Modal --> */}
 
           <div
-            class="modal fade"
+            className="modal fade"
             id="exampleModal"
             tabindex="-1"
             aria-labelledby="exampleModalLabel"
             aria-hidden="true"
           >
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+            <div className="modal-dialog modal-dialog-centered">
+              <div className="modal-content">
+                <div className="modal-header">
+                  <h1 className="modal-title fs-5" id="exampleModalLabel">
                     Sign In
                   </h1>
                   {/* <button
@@ -115,15 +115,15 @@ const Navbar = () => {
                   ></button> */}
                   <button
                     type="button"
-                    class="button"
+                    className="button"
                     data-bs-dismiss="modal"
                     aria-label="Close"
                   >
-                    <span class="X"></span>
-                    <span class="Y"></span>
+                    <span className="X"></span>
+                    <span className="Y"></span>
                   </button>
                 </div>
-                <div class="modal-body">
+                <div className="modal-body">
                   <form onSubmit={handleSubmit}>
                     <div className="mb-3">
                       <label
@@ -155,7 +155,7 @@ const Navbar = () => {
 
                         type={showPassword ? "text" : "password"}
                         id="password"
-                        class="form-control focus-ring focus-ring-light"
+                        className="form-control focus-ring focus-ring-light"
                         placeholder="Enter Your Password"
                       />
                       <i
@@ -192,7 +192,7 @@ const Navbar = () => {
                           Forget Password
                         </Link>
                         <div
-                          class="modal fade"
+                          className="modal fade"
                           id="forgetpassword"
                           tabindex="-1"
                           aria-labelledby="exampleModalLabel"

@@ -12,15 +12,15 @@ function Dashboard_Navbar() {
         <Navbar
           key={expand}
           expand={expand}
-          className="bg-body-tertiary bg-success outline position-fixed z-2 w-100 "
-          bg="dark"
-          data-bs-theme="dark"
+          className="bg-body-tertiary bg-success outline z-2 w-100 "
+          // bg="dark"
+          data-bs-theme={window.location.pathname === '/carlist' ? "light" : "dark"}
         >
           <Container fluid>
             <Navbar.Brand href="#">B2B Cabs</Navbar.Brand>
             <Navbar.Toggle
               aria-controls={`offcanvasNavbar-expand-${expand}`}
-              className="focus-ring focus-ring-dark border border-0"
+              className="focus-ring focus-ring-light border border-0"
             />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}

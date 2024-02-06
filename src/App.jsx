@@ -7,6 +7,7 @@ import Sign_In from "./Component/Sign_In/Sign_In";
 import Sign_Up from "./Component/Sign_Up/Sign_Up";
 import StepContext from "./Component/Sign_Up/StepContext";
 import Dashboard_Hero from "./Pages/Dashboard_Hero";
+import CarShowingPage from "./Component/CarShowingPage/CarShowingPage";
 
 export default function App() {
   return (
@@ -22,7 +23,8 @@ export default function App() {
             </StepContext>
           }
         />
-        <Route path="/dashboard" element={<Dashboard_Hero />} />
+        <Route path="/dashboard" element={<Dashboard_Hero/>} />
+        <Route path="/carlist" element={<CarShowingPage />} />
       </Routes>
     </BrowserRouter>
   );

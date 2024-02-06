@@ -5,7 +5,7 @@
   --gradientColor: linear-gradient(to right, #10b5cb, #0073a8);
   --whiteColor: hsl(0, 0%, 100%);
   --blackColor: #171717;
-  --textColor: #031b4e;
+  --textColor: #0a223d;
   --paraColor: #4d5b7c;
   --whiteColorDeam: hsl(0, 0%, 93%);
   --grayText: #8b8b8b;
@@ -64,11 +64,9 @@
   -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
   box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
   transition: all 250ms;
+  color: var(--whiteColor) !important;
 }
 
-.btn:hover {
-  color: var(--whiteColor);
-}
 
 .btn:hover::before {
   width: 100%;

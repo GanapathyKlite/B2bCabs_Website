@@ -3,7 +3,7 @@ import dayjs from "dayjs";
 import { DemoContainer, DemoItem } from "@mui/x-date-pickers/internals/demo";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
-import { DesktopDateTimePicker } from "@mui/x-date-pickers/DesktopDateTimePicker";
+import { DesktopDatePicker } from "@mui/x-date-pickers/DesktopDatePicker";
 
 export default function DatePicker() {
   const currentDate = dayjs();
@@ -20,27 +20,40 @@ export default function DatePicker() {
 
   return (
     <LocalizationProvider dateAdapter={AdapterDayjs}>
-      <DemoContainer components={["DateTimePicker"]}>
+      <DemoContainer components={["DateRangePicker"]}>
         <DemoItem className="p-0">
-          <DesktopDateTimePicker  style={{border:'none !important'}}
+          <DesktopDatePicker 
+            style={{ border: 'none !important' }}
             shouldDisableDate={(date) =>
               !isTodayOrLater(date) || isYesterdayOrEarlier(date)
             }
             renderInput={(props) => (
               <input
                 {...props}
-                placeholder="Pick up Date & Time"
-                style={{ padding: "10px"}}
-                className="w-75"
+                placeholder="Start Date"
+                style={{ padding: "10px" }}
+                className="w-50"
               />
             )}
-            format="DD/MM/YYYY HH:mm:A" // Set the desired format here
+            format="DD/MM/YYYY" // Set the desired format here for the start date
+          />
+          <DesktopDatePicker 
+            style={{ border: 'none !important' }}
+            shouldDisableDate={(date) =>
+              !isTodayOrLater(date) || isYesterdayOrEarlier(date)
+            }
+            renderInput={(props) => (
+              <input
+                {...props}
+                placeholder="End Date"
+                style={{ padding: "10px" }}
+                className="w-50"
+              />
+            )}
+            format="DD/MM/YYYY" // Set the desired format here for the end date
           />
         </DemoItem>
       </DemoContainer>
     </LocalizationProvider>
   );
 }
-
-// border: 1px solid var(--blackColor) !important;
-// transition: all 0.3s ease !important;
