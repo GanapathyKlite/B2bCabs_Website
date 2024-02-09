@@ -1,0 +1,101 @@
+.hg {
+  height: 200vh;
+}
+
+.top {
+  top: 70px;
+}
+
+.sideBar {
+  box-shadow: 0px 0px 10px var(--bs-gray);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.form-check-input:focus {
+  box-shadow: none !important;
+}
+
+.font-size12 {
+  font-size: 12px;
+}
+
+.font-size14 {
+  font-size: 14px;
+}
+
+.font-size30{
+  font-size: 30px;
+}
+
+.fontWeight500{
+  font-weight: 500;
+}
+
+.containers {
+  padding-left: 0;
+  padding-right: 0;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.boxShadow {
+  box-shadow: 0 2px 6px 3px rgba(0, 0, 0, 0.097);
+}
+
+.carlist {
+  background-color: #fff;
+  border: 1px solid #bababa;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(138, 107, 118, 0.08);
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+  min-height: 180px;
+  position: relative;
+}
+
+.carIcon {
+  width: 150px;
+}
+
+.carData {
+  width: 550px;
+}
+
+.carRate {
+  width: 192px;
+}
+
+.carIcon img {
+  background: antiquewhite;
+  width: 75%;
+  padding: 8px;
+  height: 90px;
+  border-radius: 5px;
+}
+
+.carName {
+  font-size: 20px;
+  font-weight: 800px;
+  color: var(--SecondaryColor);
+}
+
+.similarCarName {
+  color: var(--grayText);
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.strikeDiagonal {
+  background: linear-gradient(
+    to left top,
+    transparent 47.75%,
+    #d0021a 49.5%,
+    #d0021a 50.5%,
+    transparent 52.25%
+  );
+}
+
+.fontInter{
+  font-family: "Inter" !important;
+}

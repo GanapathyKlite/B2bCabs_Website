@@ -41,7 +41,7 @@ padding-top: 0px !important;
     background: #E3F2FD;
 } */
 .select-menu {
-  width: 180px;
+  /* width: 180px; */
 }
 .select-menu .select-btn {
   color: var(--whiteColor);
@@ -68,27 +68,22 @@ padding-top: 0px !important;
 }
 .select-menu .options {
   position: relative;
-  margin-top: 10px;
+  margin-top: 20px;
   border-radius: 8px;
   background: #fff;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
   display: none;
-  /* max-height: 240px;
-    overflow: scroll; */
 }
 .select-menu.active .options {
   display: flex;
   flex-direction: column;
-  /* gap: 10px; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 10px 15px;
 }
 .options .option {
   display: flex;
-  /* height: 55px; */
   cursor: pointer;
-  /* padding: 0 0 0 15px; */
-  /* border-radius: 8px; */
+  padding: 10px 0;
   align-items: start;
   background: #fff;
   flex-direction: column;
@@ -106,7 +101,6 @@ padding-top: 0px !important;
 .option .option-text {
   font-size: 14px;
   color: #333;
-  /* font-weight: 500; */
 }
 
 .subText {
@@ -141,6 +135,16 @@ padding-top: 0px !important;
   align-items: flex-start;
   width: 100%;
 }
+
+.searchBtnDiv{
+  height: 55px;
+}
+
+.top0{
+  top: 0;
+  z-index: 555;
+}
+
 /* 
 .fromPlaceDiv{
   width: 140px;
@@ -253,11 +257,6 @@ padding-top: 0px !important;
 }
 
 /* Search Btn End */
-
-.hg{
-  height: 200vh;
-}
-
 
 /* @media (min-width: 1200px) {
   .container {
