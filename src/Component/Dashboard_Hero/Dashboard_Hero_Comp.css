@@ -204,6 +204,7 @@
 
 .css-nxo287-MuiInputBase-input-MuiOutlinedInput-input {
   font-size: 14px !important;
+  color: var(--SecondaryColor) !important;
   padding: 19px 14px !important;
 }
 

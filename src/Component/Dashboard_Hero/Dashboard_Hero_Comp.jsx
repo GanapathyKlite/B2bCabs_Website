@@ -3,7 +3,7 @@ import "./Dashboard_Hero_Comp.css";
 // import backgroundVideo from "../../Asset/Background.webm";
 import bg from "../../Asset/hero-banner.jpg";
 import Dashboard_Ads from "../Ads/Dashboard_Ads";
-import DatePicker from "../DatePicker/DatePicker";
+// import DatePicker from "../DatePicker/DatePicker";
 import { MdLocationSearching } from "react-icons/md";
 import { FaCalendarAlt } from "react-icons/fa";
 import { FaPlaneArrival } from "react-icons/fa6";
@@ -12,6 +12,7 @@ import { GrLocation } from "react-icons/gr";
 import { LuClock4 } from "react-icons/lu";
 import { MdGpsFixed } from "react-icons/md";
 import Dashboard_Footer from "../Dashboard_Footer/Dashboard_Footer";
+import Dashboard_DatePicker from "../DatePicker/Dashboard_DatePicker";
 
 const Dashboard_Hero_Comp = () => {
   const tabsData = [
@@ -293,9 +294,9 @@ const Dashboard_Hero_Comp = () => {
                     </div>
 
                     <div className=" col-lg-3 col-md-3 z-1">
-                      <div className=" px-0 py-lg-3 py-md-2  m-0 d-flex align-items-center justify-content-between">
+                      <div className="inputdiv px-0 py-lg-3 py-md-2  m-0 d-flex align-items-center justify-content-between">
                         <FaCalendarAlt className="opacity-0" />
-                        <DatePicker className="inputdiv w-100 inputbox" />
+                        <Dashboard_DatePicker className=" w-100 inputbox" />
                       </div>
                     </div>
 

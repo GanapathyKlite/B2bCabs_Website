@@ -3,9 +3,9 @@ import dayjs from "dayjs";
 import { DemoContainer, DemoItem } from "@mui/x-date-pickers/internals/demo";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
-import { DesktopDatePicker } from "@mui/x-date-pickers/DesktopDatePicker";
+import { DesktopDateTimePicker } from "@mui/x-date-pickers/DesktopDateTimePicker";
 
-export default function DatePicker() {
+export default function Dashboard_DatePicker() {
   const currentDate = dayjs();
 
   // Function to check if a date is today or later
@@ -20,42 +20,27 @@ export default function DatePicker() {
 
   return (
     <LocalizationProvider dateAdapter={AdapterDayjs}>
-      <DemoContainer components={["DateRangePicker"]}>
+      <DemoContainer components={["DateTimePicker"]}>
         <DemoItem className="p-0">
-          <DesktopDatePicker 
-            style={{ border: 'none !important' }}
+          <DesktopDateTimePicker  style={{border:'none !important'}}
             shouldDisableDate={(date) =>
               !isTodayOrLater(date) || isYesterdayOrEarlier(date)
             }
             renderInput={(props) => (
               <input
                 {...props}
-                placeholder="Start Date"
-                style={{ padding: "10px" }}
-                className="w-50"
+                placeholder="Pick up Date & Time"
+                style={{ padding: "10px", color:"var(--SecondaryColor)"}}
+                className="w-75"
               />
             )}
-            format="DD/MM/YYYY" // Set the desired format here for the start date
-            showTimeInput={false} // Disable time picker
-          />
-          <DesktopDatePicker 
-            style={{ border: 'none !important' }}
-            shouldDisableDate={(date) =>
-              !isTodayOrLater(date) || isYesterdayOrEarlier(date)
-            }
-            renderInput={(props) => (
-              <input
-                {...props}
-                placeholder="End Date"
-                style={{ padding: "10px" }}
-                className="w-50"
-              />
-            )}
-            format="DD/MM/YYYY" // Set the desired format here for the end date
-            showTimeInput={false} // Disable time picker
+            format="DD/MM/YYYY HH:mm:A" // Set the desired format here
           />
         </DemoItem>
       </DemoContainer>
     </LocalizationProvider>
   );
 }
+
+// border: 1px solid var(--blackColor) !important;
+// transition: all 0.3s ease !important;

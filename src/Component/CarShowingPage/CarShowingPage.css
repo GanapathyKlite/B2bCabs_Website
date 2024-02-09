@@ -92,11 +92,12 @@ padding-top: 0px !important;
   align-items: start;
   background: #fff;
   flex-direction: column;
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 .options .option:hover {
   background: #dddddd;
   padding-left: 15px;
+  box-shadow: -5px 0 var(--textColor) ;
 }
 .option i {
   font-size: 25px;
