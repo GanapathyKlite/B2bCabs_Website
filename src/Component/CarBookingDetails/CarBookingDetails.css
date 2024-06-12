@@ -1,0 +1,50 @@
+.ReviewBookingBar {
+  background-color: var(--SecondaryColor);
+}
+
+.titleReviewBooking {
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.pink {
+  background: linear-gradient(to right, rgb(239, 232, 247), rgb(239, 232, 247));
+}
+
+.checkTick {
+  border: 2.5px solid var(--PrimaryColor);
+  border-radius: 50%;
+  display: flex;
+  width: 25px;
+  height: 25px;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: var(--whiteColor);
+  background-image: var(--gradientColor);
+}
+
+.form-check .form-check-input {
+  float: none;
+  margin-left: 0;
+}
+
+.form-check-input{
+    margin-top: 0;
+}
+
+.inputOutline{
+    border: none;
+    outline: none;
+    padding: 10px 0;
+}
+
+/* .inputBtn{
+    border: none;
+    background: transparent;
+    position: absolute;
+    right: 20px;
+    font-size: 16px;
+    bottom: 15px;
+    color: var(--PrimaryColor);
+} */

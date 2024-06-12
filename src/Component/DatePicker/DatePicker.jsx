@@ -48,7 +48,6 @@ export default function DatePicker() {
                 {...props}
                 placeholder="End Date"
                 style={{ padding: "10px" }}
-                className="w-50"
               />
             )}
             format="DD/MM/YYYY" // Set the desired format here for the end date

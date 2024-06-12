@@ -23,6 +23,10 @@
   width: 150px;
 }
 
+.SignInBtn{
+
+}
+
 @media screen and (max-width: 768px) {
   .header .navBar {
     position: absolute;
@@ -140,7 +144,7 @@
   position: absolute;
   width: 30%;
   height: 2px;
-  bottom: -5px;
+  bottom: 0px;
   left: 20px;
   transform: scaleX(0);
   /* box-shadow:
@@ -165,22 +169,53 @@
   width: 2em;
   height: 2em;
   border: none;
-  background: #031b4e70;
-  border-radius: 50%;
+  background: transparent;
   transition: 0.5s;
+  color: var(--SecondaryColor);
 }
 
-.X {
+.button > *:hover{
+  color: var(--PrimaryColor);
+  animation: closeBtn 0.5s ease-out;
+}
+
+
+.form-control:focus{
+  /* color: var(--blackColor); */
+  box-shadow: none !important;
+  border-color: var(--blackColor) !important;
+}
+
+
+@keyframes closeBtn {
+  from {
+    transform: rotate(180deg);
+   color: var(--blackColor);
+  }
+  to {
+    transform: rotate(0px);
+    color: var(--PrimaryColor);
+  }
+}
+
+
+/* .X {
   content: "";
   position: absolute;
   top: 50%;
   left: 50%;
   width: 1em;
   height: 1.5px;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--blackColor);
   transform: translateX(-50%) rotate(45deg);
 }
 
+.X:hover {
+  background-color: var(--PrimaryColor);
+}
+.Y:hover{
+  background-color: var(--PrimaryColor);
+}
 .Y {
   content: "";
   position: absolute;
@@ -188,9 +223,9 @@
   left: 50%;
   width: 1em;
   height: 1.5px;
-  background-color: #fff;
+  background-color: var(--blackColor);
   transform: translateX(-50%) rotate(-45deg);
-}
+} */
 
 .close {
   position: absolute;
@@ -212,13 +247,6 @@
   opacity: 0;
 }
 
-.button:hover {
-  background-color: var(--PrimaryColor);
-}
-
-.button:active {
-  background-color: var(--SecondaryColor);
-}
 
 .button:hover > .close {
   animation: close 0.2s forwards 0.25s;
@@ -231,3 +259,10 @@
 }
 
 /* close button in model box end */
+
+
+.navBarSection{
+  top: 0;
+  z-index: 555;
+  position: sticky;
+}

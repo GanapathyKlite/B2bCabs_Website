@@ -51,7 +51,7 @@ const Sign_Up_Form_3 = () => {
       <form className="d-flex">
         <div className="pt-5">
           <p className="mb-3" style={{ color: "var(--SecondaryColor)" }}>
-            <b>Bank Detail & Company ID Proof</b>
+            Bank Detail & Company ID Proof
           </p>
           <div className="row justify-content-between border p-md-3 p-2 rounded rounded-4 border-2">
             <div className="col-lg-12 col-md-5">
@@ -301,7 +301,7 @@ const Sign_Up_Form_3 = () => {
           </div>
           <div className="my-3 row justify-content-between">
             <div className="col-6">
-              <button className="btn-prev w-100" onClick={() => setStep(2)}>
+              <button className="btn w-100" onClick={() => setStep(2)}>
                 Back
               </button>
             </div>

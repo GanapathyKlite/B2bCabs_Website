@@ -12,7 +12,7 @@
 
 .css-nxo287-MuiInputBase-input-MuiOutlinedInput-input{
   padding: 0 !important;
-  color: var(--whiteColor) !important;
+  color: var(--whiteColor);
 }
 
 .css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root{
@@ -28,21 +28,10 @@ padding-top: 0px !important;
   min-width: 0px !important;
 }
 
-/* ===== Google Font Import - Poppins ===== */
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-} */
-/* body{
-    background: #E3F2FD;
-} */
-.select-menu {
-  /* width: 180px; */
+.w-85{
+  width: 85% !important;
 }
+
 .select-menu .select-btn {
   color: var(--whiteColor);
   display: flex;
@@ -92,7 +81,7 @@ padding-top: 0px !important;
 .options .option:hover {
   background: #dddddd;
   padding-left: 15px;
-  box-shadow: -5px 0 var(--textColor) ;
+  box-shadow: -5px 0 var(--PrimaryColor) ;
 }
 .option i {
   font-size: 25px;

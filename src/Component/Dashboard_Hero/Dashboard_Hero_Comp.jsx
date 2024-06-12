@@ -13,6 +13,7 @@ import { LuClock4 } from "react-icons/lu";
 import { MdGpsFixed } from "react-icons/md";
 import Dashboard_Footer from "../Dashboard_Footer/Dashboard_Footer";
 import Dashboard_DatePicker from "../DatePicker/Dashboard_DatePicker";
+import SingleInputDateRangePicker from "../DatePicker/CarShowing_DatePicker";
 
 const Dashboard_Hero_Comp = () => {
   const tabsData = [
@@ -70,13 +71,6 @@ const Dashboard_Hero_Comp = () => {
     <>
       <div className="hero-banner">
         <div className="overlay"></div>
-        {/* <video
-          src={backgroundVideo}
-          muted
-          autoPlay
-          loop
-          type="video/mp4"
-        ></video> */}
         <img src={bg} alt="" className="video" />
       </div>
       <div className="container-lg container-fluid position-relative height">
@@ -147,7 +141,7 @@ const Dashboard_Hero_Comp = () => {
                       </div>
                     </>
                   )}
-                  <div className="row justify-content-center align-items-center position-relative">
+                  <div className="row justify-content-center row-gap-3 align-items-center position-relative">
                     <div className=" col-lg-3 col-md-3 z-1">
                       <div className="inputdiv px-3 py-lg-3 py-md-2  m-0 d-flex align-items-center justify-content-between">
                         {/* <label className="greencircle position-relative"></label> */}
@@ -205,11 +199,14 @@ const Dashboard_Hero_Comp = () => {
                       </div>
                     </div>
 
-                    <hr className={`hrLine  d-block d-sm-none d-md-block d-lg-block d-xl-block `} style={{ top: tab.id === 3 ? '30%' : '50%' }} />
+                    <hr
+                      className={`hrLine  d-block d-sm-none d-md-none d-lg-none d-xl-none `}
+                      style={{ top: tab.id === 3 ? "30%" : "50%" }}
+                    />
 
-                    <div className="divline d-none d-sm-block d-md-none d-lg-none d-xl-none">
+                    {/* <div className="divline d-block d-sm-none d-md-block d-lg-block d-xl-block">
                       <hr className="hrLine" />
-                    </div>
+                    </div> */}
                     <div className=" col-lg-3 col-md-3 z-1">
                       <div className="inputdiv px-3 py-lg-3 py-md-2  m-0 d-flex align-items-center justify-content-between">
                         <div
@@ -292,76 +289,96 @@ const Dashboard_Hero_Comp = () => {
                     <div className="divline d-none d-sm-block d-md-none d-lg-none d-xl-none">
                       <hr className="hrLine" />
                     </div>
-
-                    <div className=" col-lg-3 col-md-3 z-1">
-                      <div className="inputdiv px-0 py-lg-3 py-md-2  m-0 d-flex align-items-center justify-content-between">
-                        <FaCalendarAlt className="opacity-0" />
-                        <Dashboard_DatePicker className=" w-100 inputbox" />
-                      </div>
-                    </div>
-
-                   
-
-          
-
-                    <hr className="hrLine  d-block d-sm-none" />
-
-                    <div className="divline d-none d-sm-block d-md-none d-lg-none d-xl-none">
-                      <hr className="hrLine" />
-                    </div>
-
-                    {tab.id === 3 ? 
-                    <>
-<div className=" col-lg-3 col-md-3 z-1">
-                      <div className="inputdiv px-3 py-lg-3 py-md-2  m-0 d-flex align-items-center justify-content-between">
-                        {/* <label className="greencircle position-relative"></label> */}
-                        <div
-                          className={`${tab.id === 1 ? "d-block" : "d-none"}`}
-                        >
-                          {selectedOption === "option1" ? (
-                            <FaPlaneArrival className="icon" />
-                          ) : (
-                            <GrLocation className="icon" />
-                          )}
+                    {tab.id === 1 ||
+                    (tab.id === 2 && selectedOption === "option2") ? (
+                      <>
+                        <div className=" col-lg-3 col-md-3 z-1">
+                          <div className="inputdiv px-3   m-0 d-flex align-items-center justify-content-between">
+                            {/* <FaCalendarAlt className="icon" /> */}
+                            <Dashboard_DatePicker className=" w-100 inputbox height-58" />
+                          </div>
                         </div>
-                        <div
-                          className={`${tab.id === 2 ? "d-block" : "d-none"}`}
-                        >
-                          {selectedOption === "option1" ? (
-                            <GrLocation className="icon" />
-                          ) : (
-                            <GrLocation className="icon" />
-                          )}
+                      </>
+                    ) : (
+                      <>
+                        <div className=" col-lg-3 col-md-3 z-1">
+                          <div className="inputdiv px-3 py-lg-3 py-md-2   m-0 d-flex align-items-center justify-content-between">
+                            <FaCalendarAlt className="icon" />
+                            <SingleInputDateRangePicker className=" w-100 inputbox height-58" />
+                          </div>
                         </div>
-                        <div
-                          className={`d-none`}
-                        >
-                          {selectedOption === "option1" ? (
-                            <GrLocation className="icon" />
-                          ) : (
-                            <GrLocation className="icon" />
-                          )}
-                        </div>
+                      </>
+                    )}
 
-                        <select className="ps-4 inputbox m-0 w-100">
-                            <option selected>Select Your Package</option>
-                            <option value="1">Cochin - Munnar (2N) - Alleppy (1N)</option>
-                            <option value="2">Munnar - Cochin (2N) - Alleppy (1N)</option>
-                            <option value="3">Cochin - Alleppy  (2N) - Munnar  (1N)</option>
-                            <option value="4">Cochin - Munnar (2N) - Alleppy (1N)</option>
-                          </select>
-                      </div>
-                    </div>
-                    </>
-                     : <></>}
+                    {tab.id === 3 ? (
+                      <>
+                        <hr className="hrLine  d-block d-sm-none" />
+
+                        <div className="divline d-none d-sm-block d-md-none d-lg-none d-xl-none">
+                          <hr className="hrLine" />
+                        </div>
+                        <div className=" col-lg-3 col-md-3 z-1">
+                          <div className="inputdiv px-3 py-lg-3 py-md-2  m-0 d-flex align-items-center justify-content-between">
+                            {/* <label className="greencircle position-relative"></label> */}
+                            <div
+                              className={`${
+                                tab.id === 1 ? "d-block" : "d-none"
+                              }`}
+                            >
+                              {selectedOption === "option1" ? (
+                                <FaPlaneArrival className="icon" />
+                              ) : (
+                                <GrLocation className="icon" />
+                              )}
+                            </div>
+                            <div
+                              className={`${
+                                tab.id === 2 ? "d-block" : "d-none"
+                              }`}
+                            >
+                              {selectedOption === "option1" ? (
+                                <GrLocation className="icon" />
+                              ) : (
+                                <GrLocation className="icon" />
+                              )}
+                            </div>
+                            <div className={`d-none`}>
+                              {selectedOption === "option1" ? (
+                                <GrLocation className="icon" />
+                              ) : (
+                                <GrLocation className="icon" />
+                              )}
+                            </div>
+
+                            <select className="ps-4 inputbox m-0 w-100">
+                              <option selected>Select Your Package</option>
+                              <option value="1">
+                                Cochin - Munnar (2N) - Alleppy (1N)
+                              </option>
+                              <option value="2">
+                                Munnar - Cochin (2N) - Alleppy (1N)
+                              </option>
+                              <option value="3">
+                                Cochin - Alleppy (2N) - Munnar (1N)
+                              </option>
+                              <option value="4">
+                                Cochin - Munnar (2N) - Alleppy (1N)
+                              </option>
+                            </select>
+                          </div>
+                        </div>
+                      </>
+                    ) : (
+                      <></>
+                    )}
 
                     {/* <div className="col-lg-4 col-md-4 z-3"><input type="text" className="inputbox px-lg-4 py-lg-3 py-md-2  px-md-3 m-0" placeholder = {tab.second_input_box_placeholder} /></div> */}
                     <div className="col-lg-3 col-md-3 z-1">
                       <button
                         type="submit"
-                        className="text-nowrap search_btn w-100 py-lg-3 px-lg-4 py-md-2 px-md-3 text-light"
+                        className="text-nowrap search_btn w-100 py-lg-3 px-lg-4 py-md-2 px-md-3"
                       >
-                        SEARCH
+                        Search
                       </button>
                     </div>
                   </div>
@@ -376,7 +393,7 @@ const Dashboard_Hero_Comp = () => {
       </div>
 
       <div>
-        <Dashboard_Footer/>
+        <Dashboard_Footer />
       </div>
     </>
   );

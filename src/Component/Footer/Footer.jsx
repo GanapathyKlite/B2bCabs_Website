@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./Footer.css";
-import { FiSend } from "react-icons/fi";
+import { TbMailForward } from "react-icons/tb";
 import Logo from "../../Asset/B2b Logo.svg";
 import {
   AiOutlineTwitter,
@@ -41,7 +41,7 @@ const Footer = () => {
               placeholder="Enter Email Address"
             />
             <button data-aos="fade-up" className="btn flex" type="submit">
-              SEND <FiSend className="icon" />
+              SEND <TbMailForward />
             </button>
           </div>
         </div>

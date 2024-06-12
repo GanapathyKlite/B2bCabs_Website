@@ -4,6 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Profile from "../../Asset/Profile.png";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import "./Dashboard_Navbar.css";
+import Logo from "../../Asset/B2b_Main_Logo_.svg";
 
 function Dashboard_Navbar() {
   return (
@@ -12,12 +13,15 @@ function Dashboard_Navbar() {
         <Navbar
           key={expand}
           expand={expand}
-          className="bg-body-tertiary bg-success outline z-2 w-100 "
+          className="bg-body-tertiary position-sticky top-0 bg-success outline z-2 w-100 "
           // bg="dark"
-          data-bs-theme={window.location.pathname === '/carlist' ? "light" : "dark"}
+          data-bs-theme= "light" 
         >
           <Container fluid>
-            <Navbar.Brand href="#">B2B Cabs</Navbar.Brand>
+            <Navbar.Brand 
+            style={{width:"175px"}}
+            // href="#"
+            ><img src={Logo} alt="Main Logo" /></Navbar.Brand>
             <Navbar.Toggle
               aria-controls={`offcanvasNavbar-expand-${expand}`}
               className="focus-ring focus-ring-light border border-0"
@@ -28,12 +32,6 @@ function Dashboard_Navbar() {
               placement="end"
             >
               <div className="profile">
-                {/* <div className="circle-1"></div>
-                        <div className="circle-2"></div>
-                        <div className="circle-3"></div>
-                        <div className="circle-4"></div>
-                        <div className="circle-5"></div>
-                        <div className="circle-6"></div> */}
                 <div className="d-flex flex-column gap-2">
                   <div className="profileCirlce">
                     {/* <div className="profileCirlce2"> */}

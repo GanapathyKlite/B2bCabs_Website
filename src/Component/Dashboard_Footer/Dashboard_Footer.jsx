@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from "../../Asset/B2b Logo.svg"
+import Logo from "../../Asset/B2b_WhiteText_Main_Logo_.svg"
 import "./Dashboard_Footer.css"
 import { IoIosArrowForward } from "react-icons/io";
 import { FaPhone } from "react-icons/fa6";
@@ -14,7 +14,9 @@ const Dashboard_Footer = () => {
           <div class="col-lg-3 col-md-6 col-sm-6">
             <div class="widget company-intro-widget">
               {/* <img src={Logo} className='w-50 mb-2' alt="logo"/> */}
-              <div className='display-6 mb-3' style={{color:'var(--PrimaryColor)'}}>B2B Cabs</div>
+              <div className='display-6 mb-3' style={{width:"200px"}}>
+                <img src={Logo} alt="Main Logo" />
+              </div>
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
               <ul class="company-footer-contact-list">
                 <li className='d-flex gap-2 align-items-center justify-content-start'><FaPhone />1234567890</li>

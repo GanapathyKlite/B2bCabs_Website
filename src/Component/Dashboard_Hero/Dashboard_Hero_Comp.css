@@ -29,7 +29,7 @@
 
 .video {
   position: absolute;
-  height: 60vh;
+  height: 80vh;
   width: 100%;
   top: 0;
   bottom: 0;
@@ -54,18 +54,18 @@
 .search_btn {
   border: none;
   /* box-shadow: -4px 4px 0 var(--PrimaryColor); */
-  background-color: var(--blackColor);
-  color: var(--whiteColor);
+color: var(--whiteColor);
   transition: 0.2s ease-in-out;
-  background: radial-gradient(
+  background-color: var(--PrimaryColor) ;
+  /* background: radial-gradient(
     127.68% 2996.56% at 12.65% 127.68%,
     #000000 0%,
     #222222 100%
-  );
+  ); */
 }
 
 .search_btn:hover {
-  box-shadow: none;
+ opacity: 0.8;
 }
 
 .hrLine {
@@ -150,7 +150,7 @@
   margin: 0 16px;
   border: none;
   background-color: transparent;
-  font-size: 14px !important;
+  font-size: 13px !important;
 }
 
 .inputdiv {
@@ -185,28 +185,36 @@
 
 .mobile_sc {
   position: absolute;
-  top: -180px;
+  top: -170px;
 }
 
 .css-a643pv-MuiStack-root {
-  padding: 0px !important;
+  /* padding: 0px !important; */
   width: 100%;
   overflow: hidden !important;
+  padding-top: 0 !important;
+}
+
+.css-11a8txn-MuiStack-root>:not(style):not(style){
+  padding: 18.9px 5px !important;
 }
 
 .css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root {
   border-radius: 0px !important;
   background-color: #fff !important;
-  padding-right: 2px;
+  padding-right: 0 !important;
   /* display: flex !important; */
   justify-content: space-between;
 }
 
+
 .css-nxo287-MuiInputBase-input-MuiOutlinedInput-input {
-  font-size: 14px !important;
+  font-size: 13px !important;
   color: var(--SecondaryColor) !important;
   padding: 19px 14px !important;
 }
+
+
 
 /* Style the radio buttons */
 input[type="radio"] {
@@ -226,6 +234,34 @@ input[type="radio"]:checked {
   background-color: #4caf50;
 }
 
+.css-iax6tr-MuiMultiSectionDigitalClock-root{
+  max-height: 270px !important;
+}
+
+.css-1e3wlyl-MuiButtonBase-root-MuiMenuItem-root-MuiMultiSectionDigitalClockSection-item{
+  font-size: 12px !important;
+  /* padding: 8px 10px 8px 0 !important; */
+}
+
+.css-1v8yqdb-MuiPickersArrowSwitcher-root {
+padding: 0px !important;
+}
+
+.css-138poq7-MuiPickersSlideTransition-root-MuiDayCalendar-slideTransition{
+ 
+    overflow: hidden;
+    min-height: 240px;
+    min-width: 300px;
+    min-height: 250px;
+}
+
+.css-1r39cda{
+  height: 280px !important;
+}
+
+.css-ymqfn8-MuiStack-root{
+  width: 80% !important;
+}
 
 /* Radio Button Start */
 
@@ -277,7 +313,7 @@ input[type="radio"]:checked {
   color: var(--SecondaryColor);
   margin-left: 10px;
   letter-spacing: 1px;
-  font-size: 12px;
+  font-size: 13px;
   transition: 0.3s;
 }
 
@@ -318,15 +354,18 @@ input[type="radio"]:checked {
     position: static;
     width: 100%;
   }
-  .divline {
-    padding: 0 0 0 65px;
-  }
+
   .search_btn {
     padding: 15px;
   }
 
   .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
     border: none !important;
+  }
+
+  .md-row-gap-3 > .col {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 }
 
@@ -347,6 +386,9 @@ input[type="radio"]:checked {
     padding: 12px 0 12px 20px !important;
     width: 75% !important;
     /* height: 42px !important; */
+  }
+  .css-11a8txn-MuiStack-root>:not(style):not(style){
+    padding: 11px 5px !important;
   }
 }
 

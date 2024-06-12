@@ -37,7 +37,7 @@ const CarShowingNavBar = () => {
           <div className="row justify-content-evenly">
             <div className={`p-0  col-lg-2 select-menu ${isActive ? "active" : ""}`}>
               <div className="select-btn" onClick={toggleDropdown}>
-                <div className="d-flex label">Trip Travel</div>
+                <div className="d-flex label">Trip Type</div>
                 <div className="d-flex justify-content-between align-items-center w-100">
                   <span className="sBtn-text">{selectedOption}</span>
                   {isActive ? <FaAngleUp /> : <FaAngleDown />}
@@ -89,7 +89,7 @@ const CarShowingNavBar = () => {
             </div>
 
             <div className="pe-0 ps-1 col-lg-3">
-              <div className="d-flex justify-content-between align-items-start fromPlace w-75">
+              <div className="d-flex justify-content-between align-items-start fromPlace w-85">
                 <div className="d-flex label">PICK-UP DATE</div>
                 <div className="d-flex justify-content-between align-items-center w-100">
              <SingleInputDateRangePicker />

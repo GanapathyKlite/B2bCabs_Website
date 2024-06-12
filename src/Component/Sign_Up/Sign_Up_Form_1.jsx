@@ -44,7 +44,7 @@ const Sign_Up_Form_1 = () => {
       {/* <form className="d-flex" onSubmit={handleSignUp}> */}
         <div className="pt-4">
           <p className="mb-3" style={{ color: "var(--SecondaryColor)" }}>
-            <b>Company details</b>
+            Company details
           </p>
           <div className="row justify-content-center justify-content-md-between border p-md-3 p-2 rounded rounded-4 border-2">
             <div className="col-lg-12 col-md-5">

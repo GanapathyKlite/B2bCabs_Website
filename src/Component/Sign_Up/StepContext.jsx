@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Sign_Up from "./Sign_Up";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export const multiStepContext = React.createContext();
 

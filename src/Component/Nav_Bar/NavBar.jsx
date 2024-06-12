@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import "./NavBar.css";
-import Logo from "./B2b Logo.svg";
+import Logo from "../../Asset/B2b_Main_Logo_.svg";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { TbGridDots } from "react-icons/tb";
 import { Link, useNavigate } from "react-router-dom";
+import { IoClose } from "react-icons/io5";
+
 
 const Navbar = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -89,7 +91,7 @@ const Navbar = () => {
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
           >
-            Login
+            Agent Login
           </button>
 
           {/* <!-- Modal --> */}
@@ -107,20 +109,16 @@ const Navbar = () => {
                   <h1 className="modal-title fs-5" id="exampleModalLabel">
                     Sign In
                   </h1>
-                  {/* <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button> */}
                   <button
                     type="button"
                     className="button"
                     data-bs-dismiss="modal"
                     aria-label="Close"
                   >
-                    <span className="X"></span>
-                    <span className="Y"></span>
+                    <IoClose
+                      style={{ fontSize: "25px" }}
+                      className="closeBtn"
+                    />
                   </button>
                 </div>
                 <div className="modal-body">
@@ -130,13 +128,11 @@ const Navbar = () => {
                         className="mb-2"
                         style={{ color: "--SecondaryColor" }}
                       >
-                        <b>
-                          Agent ID <span className="text-danger">*</span>
-                        </b>
+                       <div> Agent ID <span className="text-danger">*</span></div>
                       </label>
                       <input
                         type="text"
-                        className="form-control focus-ring focus-ring-light"
+                        className="form-control "
                         placeholder="Enter Your Agent ID"
                       />
                     </div>
@@ -146,16 +142,14 @@ const Navbar = () => {
                         className="mb-2"
                         style={{ color: "--SecondaryColor" }}
                       >
-                        <b>
-                          Password <span className="text-danger">*</span>
-                        </b>
+                        Password <span className="text-danger">*</span>
                       </label>
                       <input
                         // ref={inputRef}
 
                         type={showPassword ? "text" : "password"}
                         id="password"
-                        className="form-control focus-ring focus-ring-light"
+                        className="form-control "
                         placeholder="Enter Your Password"
                       />
                       <i
@@ -175,7 +169,10 @@ const Navbar = () => {
                       ></i>
                     </div>
 
-                    <div className="mb-3 d-flex justify-content-between">
+                    <div
+                      className="mb-3 d-flex justify-content-between"
+                      style={{ fontSize: "var(--fontSize13)" }}
+                    >
                       <label className="d-inline-flex gap-2 align-items-center justify-content-center">
                         <input
                           type="checkbox"
@@ -188,30 +185,32 @@ const Navbar = () => {
                         <Link
                           data-bs-toggle="modal"
                           data-bs-target="#forgetpassword"
+                          style={{ color: "var(--PrimaryColor)" }}
                         >
                           Forget Password
                         </Link>
-                        <div
-                          className="modal fade"
-                          id="forgetpassword"
-                          tabindex="-1"
-                          aria-labelledby="exampleModalLabel"
-                          aria-hidden="true"
-                        ></div>
                       </div>
                     </div>
-                    <button
-                      className="btn btn-outline-light w-100 btn-size mt-1"
-                      data-bs-dismiss="modal"
+                    <div className="d-flex justify-content-center">
+                      <button
+                        className="btn btn-outline-light w-25 btn-size mt-1"
+                        data-bs-dismiss="modal"
+                      >
+                        Sign In
+                      </button>
+                    </div>
+                    <div
+                      className="text-center mt-5"
+                      style={{ fontSize: "var(--fontSize13)" }}
+                      onClick={handleRegister}
                     >
-                      Log In
-                    </button>
-                    <div className="text-center mt-5" onClick={handleRegister}>
                       <Link data-bs-dismiss="modal">
-                        <span style={{ color: "var(--grayText)" }}>
-                          New to B2B Cabs?
+                        <span style={{ color: "var(--blackColor)" }}>
+                          Become a Agent ? &nbsp;
                         </span>
-                        Register
+                        <span style={{ color: "var(--PrimaryColor)" }}>
+                          Register
+                        </span>
                       </Link>
                     </div>
                   </form>

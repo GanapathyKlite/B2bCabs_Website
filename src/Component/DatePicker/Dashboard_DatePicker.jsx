@@ -21,8 +21,8 @@ export default function Dashboard_DatePicker() {
   return (
     <LocalizationProvider dateAdapter={AdapterDayjs}>
       <DemoContainer components={["DateTimePicker"]}>
-        <DemoItem className="p-0">
-          <DesktopDateTimePicker  style={{border:'none !important'}}
+        <DemoItem className={`p-0 ${window.innerWidth >= 768 ? 'md-row-gap-3' : ''}`}>
+          <DesktopDateTimePicker style={{ border: 'none !important' }}
             shouldDisableDate={(date) =>
               !isTodayOrLater(date) || isYesterdayOrEarlier(date)
             }
@@ -30,17 +30,14 @@ export default function Dashboard_DatePicker() {
               <input
                 {...props}
                 placeholder="Pick up Date & Time"
-                style={{ padding: "10px", color:"var(--SecondaryColor)"}}
-                className="w-75"
+                style={{ padding: "10px", color: "var(--SecondaryColor) !important" }}
+                className="w-75 text-dark"
               />
             )}
-            format="DD/MM/YYYY HH:mm:A" // Set the desired format here
+            format="DD/MM/YYYY HH:MM:A" // Set the desired format here
           />
         </DemoItem>
       </DemoContainer>
     </LocalizationProvider>
   );
 }
-
-// border: 1px solid var(--blackColor) !important;
-// transition: all 0.3s ease !important;

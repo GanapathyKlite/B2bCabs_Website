@@ -1,15 +1,3 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-}
-
-/* section {
-  padding: 60px 0;
-  min-height: 100vh;
-} */
 
 a,
 a:hover,
@@ -46,7 +34,7 @@ img {
   height: auto;
 }
 .footer-section {
-  background-color: #233243;
+  background-color: var(--SecondaryColor);
   position: relative;
   overflow: hidden;
   z-index: 9;
@@ -59,7 +47,7 @@ img {
   width: 44%;
   height: 257%;
   transform: rotate(54deg);
-  background-color: rgb(31, 47, 64);
+  background-color: var(--blackColor);
   -webkit-transform: rotate(54deg);
   -moz-transform: rotate(54deg);
   -ms-transform: rotate(54deg);
@@ -69,7 +57,7 @@ img {
 .footer-section:after {
   position: absolute;
   content: "";
-  background-color: rgb(31, 47, 64);
+  background-color:var(--blackColor);
   top: -24%;
   right: 4%;
   width: 26%;

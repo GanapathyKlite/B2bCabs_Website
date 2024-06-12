@@ -62,7 +62,7 @@ const Sign_Up_Form_2 = () => {
       {/* <form className="d-flex" onSubmit={handleSignUp}> */}
         <div className="pt-5">
           <p className="mb-3" style={{ color: "var(--SecondaryColor)" }}>
-            <b>Personal Details</b>
+            Personal Details
           </p>
           <div className="row justify-content-between border p-md-3 p-2 rounded rounded-4 border-2">
             <div className="col-lg-12 col-md-5">
@@ -149,7 +149,7 @@ const Sign_Up_Form_2 = () => {
           </div>
             <div className="row justify-content-center my-3 px-0">
               <div className="col-6 col-md-5">
-                <button className="btn-prev w-100" onClick={() => setStep(1)}>
+                <button className="btn w-100" onClick={() => setStep(1)}>
                   Back
                 </button>
               </div>
